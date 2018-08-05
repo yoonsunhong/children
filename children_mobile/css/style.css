@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+/* -------- 1) 태그초기화  -------- */
+body, h1, h2, h3, h4, h5, h6, p, ul, dl, dd, button, form{margin:0px;padding:0px;}
+html,body{width:100%;height:100%;overflow:hidden;}
+body{font-family:"Nanum Gothic", dotum, Arial;font-size:14px;color:#666;-webkit-text-size-adjust:none }/* 안드로이드 폰에서 가로 크기에 따라 글자크기가 변경되는 것을 제한한다 */
+h1, h2, h3, h4, h5, h6{font-size:100%;}
+ul{list-style:none;}
+a{text-decoration:none;}
+button{border:0px;background:none;-webkit-appearance:none}/* 그림자 제거 */
+address{font-style:normal}
+input[type="text"],input[type="password"]{-webkit-border-radius:0px;border-radius:0px;}/* 아이폰에서 모서리 둥근스타일 제거 */
+input[type="submit"]{border:0px;}
+img{vertical-align:top}
+
+header, nav, section, footer, figure{display:block;}
+
+/* -------- 2) 공통클래스 -------- */
+.f_l{float:left;}
+.f_r{float:right;}
+.p_r{position:relative;}
+.p_a{position:absolute;}
+.blind{font-size:0;line-height:0;width:1;height:1;overflow:hidden;position:absolute;top:0px;left:-9999px;}
+.clear:after{display:block;content:"";clear:both;}
+
+/* 공통 */
+.foot_area{width:220px;margin:0px auto;}
+#footer h3{padding-left:2px}
+#footer address{padding-right:2px;padding-top:4px;font-size:12px;color:#fff}
+
+/* index */
+#main #header, #main #content{background:#fff;z-index:100}
+#main #content{height:250px;padding:90px 0 20px;}
+.main_bg{background:#fff}
+.head_top{height:21px;background:#006fb8}
+.main_tit{padding:10px 0 0 10px}
+.main_content{width:266px;margin:0px auto}
+#content .main_logo{padding-bottom:30px}
+#content input{width:214px;height:33px;line-height:33px;border:1px solid #c5c5c5;color:#9c9c9c}
+#content input[type="text"]{background:#ededed url("../images/id.png") no-repeat 19px 50%;background-size:12px 16px;padding-left:50px;}
+#content input[type="password"]{background:#ededed url("../images/pwd.png") no-repeat 18.5px 50%;background-size:13px 18px;border-top:0;padding-left:50px;}
+#content input[type="submit"]{width:266px;height:33px;margin:8px 0 10px;background:#f8981d;border:1px solid #b48400;color:#fff;text-align:center;font-weight:bold}
+.input_chk{position:relative;}
+.input_chk .chk{display:none;left:0px;width:20px;height:20px;}
+.input_chk label{display:block;height:20px;padding-top:3px;padding-left:25px;background:url("../images/id_store.png") no-repeat 0% 50%;background-size:20px 20px;cursor:pointer;vertical-align:middle}
+.input_chk input:checked + label{background:url("../images/id_check.png") no-repeat 0% 50%;background-size:20px 20px;}
+
+.main_foot{position:absolute;bottom:0;width:100%;padding:10px 0px;background:#006fb8}
+
+/* location */
+.sub_head{width:90%;height:30px;margin-left:auto;margin-right:auto;}
+.sub_logo{padding-top:8px}
+.sub_content{width:100%;background:#006fb8}
+#header div p{display:block;font-size:13px;font-weight:bold;margin-top:7.5px;padding-right:5px}
+.logout_btn{width:65px;height:20px;margin-top:5px;background: #808080;border: 1px solid #484848;color: #fff;text-align: center;font-weight: bold;}
+.loc_tit{width:90%;margin-left:auto;margin-right:auto;height:31px;line-height:31px;background:#006fb8;color:#fff;}
+.cnt_select{width:100%;height:30px;line-height:35px;background:#eaeaea;padding:10px 0}
+.cnt_select .area02{width:90%;margin-left:auto;margin-right:auto;}
+.cnt_select select{width:80%;padding:5px 0 5px 15px;}
+.cnt_select .confirm_btn{width:18%;height:29px;background: #f8981d;border: 1px solid #b48400;color: #fff;text-align: center;font-weight: bold;}
+
+#content, .map{height:100%}
+.map_area{position:absolute;top:111px;left:0px;bottom:0px;width:100%;height:100%;}
+
+.sub_foot{position:absolute;bottom:0px;width:100%;padding:5px 0;background:#bebebe} 
+
+

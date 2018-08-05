@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* =====------------1) 태그 초기화-----------===== */
+body,h1,h2,ul,ol,table,th,td,form,button{margin:0px;padding:0px;}
+html,body{width:100%;height:100%;min-width:1000px}
+body.sub{min-width:1060px}
+body{font-family:"Nanum Gothic",dotum;font-size:12px;background:#fff;border:0}
+table{border-collapse:collapse;border-spacing:0px}
+caption{font-size:0px;line-height:0px;width:0px;height:0px;overflow:hidden;}
+h1,h2{font-size:inherit}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#000}
+a:hover, a:link, a:visited, a:active{color:#000}
+button{border:0px;background:none;cursor:pointer;font-family:inherit;font-size:inherit;color:inherit}
+hr{width:0px;height:0px;overflow:hidden;position:absolute;top:0px;left:-9999px}
+input, select{font-family:inherit;font-size:inherit;color:inherit;}
+input[type="text"], select{border:1px solid #a5acb2}
+img{vertical-align:top}
+address{font-style:normal}
+header, nav, section, footer{display:block;}
+
+/* =====------------2) 공통 클래스-----------===== */
+.f_l{float:left}
+.f_r{float:right}
+.p_r{position:relative}
+.p_a{position:absolute}
+.t_c{text-align:center}
+.t_r{text-align:right}
+.blind{font-size:0;line-height:0;width:1px;height:1px;overflow:hidden;text-indent:-9999px;position:absolute;top:0px;left:-9999px}
+.clear:after{display:block;content:"";clear:both}
+
+/* =====------------3) skip-----------===== */
+#skip a{position:absolute;top:0px;left:-9999px;z-index:100}
+#skip a:focus, #skip a:active{left:0px;text-align:center;width:100%;padding:10px 0;background:#bb0000;color:#fff;font-weight:bold}
+
+/* =====------------4) 레이아웃-----------===== */
+.area{width:1000px;margin:0px auto;}
+.sub #header .area, .sub #footer .area{width:1060px}
+
+#header{width:100%;height:117px}
+#content{width:100%;background:#eaeaea;border-top:1px solid #c8c8c8;border-bottom:1px solid #c8c8c8}
+
+/* =====-----#header > .area-------5) 상단 헤더-----------===== */
+#header .snb .area{height:27px}
+#header h1.logo{padding:24px 0}
+
+#gnbNavi ul li{float:left;line-height:90px;margin-left:80px}
+#gnbNavi ul li a{font-family:"Nanum Gothic";font-size:16px;font-weight:bold;color:#000}
+#gnbNavi ul li a:hover, #gnbNavi ul li a:focus, #gnbNavi ul li.on a{color:#006fb8;text-decoration:none}
+
+#header .snb{width:100%;height:27px;line-height:27px;background:#006fb8}
+#header .snb ul{font-family:dotum,'돋움'}
+#header .snb ul li{float:left;padding-left:5px;color:#fff}
+#header .snb a{top:0px;right:0px;color:#fff}
+
+.gnb{height:90px}
+
+/* =====------------7) 하단 푸터-----------===== */
+#footer p{font-family:dotum;font-weight:bold}
+#footer address{font-family:dotum;color:#898989}
+
+.sub #footer p{display:block;font-family:dotum;padding:12px 0;font-weight:bold;color:#000}
+.snb #footer address{font-family:dotum;color:#898989}
+
+/* 메인 */
+#content .login{top:160px;left:71px;}
+
+/* 권한 신청 */
+.contents-title-type02{font-family:"Nanum Gothic";line-height:28px;padding-bottom:17px;border-bottom:1px solid #d1d1d1;font-weight:bold;font-size:28px;color:#000;}
+.title-wrap-type02{width:100%;margin:37px 0 16px;color:#505050;}
+.title-wrap-type02 h4{float:left;padding-left:17px;background:url("../images/blit02.gif") no-repeat 0 2px;}
+.title-wrap-type02 p{float:right;font-size:11px;color:#868b93}
+
+a.btn-type-01{display:inline-block;height:30px;line-height:30px;padding:1px 14px 0;background:url("../images/bg_btn_type01.gif") repeat-x 0 0;border:1px solid #486382;font-size:14px;font-weight:bold;color:#fff !important;text-decoration:none !important;vertical-align:middle;}
+a.btn-type-02{display:inline-block;height:30px;line-height:30px;padding:1px 14px 0;background:url("../images/bg_btn_type02.gif") repeat-x 0 0;border:1px solid #7a7a7a;font-size:14px;font-weight:bold;color:#505050 !important;text-decoration:none !important;vertical-align:middle;}
+.application a.btn-type-06{margin-left:7px}
+
+/* 사업소개 */
+.introduce{height:1280px !important}
+.introduce .blank{height:1200px !important}
+.introduce .list1, .introduce .list2, .introduce .list3, .introduce .list4{padding-top:33px}
+.introduce div .tit{padding-left:20px;color:#006fb8;font-weight:bold;background:url("../images/tit.png") 0 0 no-repeat}
+.introduce div .txt{padding:10px 0 0 30px;line-height:18px;background:url("../images/txt.png") 10px 11px no-repeat}
+.introduce .list2 .table_name{padding:15px 0 0 10px;font-weight:bold;}
+.introduce .list2 .table-type02{width:980px;margin:5px auto 10px;}
+.introduce .list2 .table-type02 thead tr th{background:url("../images/bg.jpg") 0 0 repeat-x;border-left:1px solid #dbdbdb}
+.introduce .list2 .table-type02 .bor0{border-left:0}
+.introduce .list2 .table-type02 tbody tr td{height:40px;padding:15px;padding-right:0;text-align:left;border-left:1px solid #dbdbdb}
+.introduce .list3 ul{padding:5px 30px}
+.introduce .list3 ul li{line-height:18px}
+.introduce .list3 img{margin:10px}
+
+
+/* 학부모 관리(목록) */
+#content .blank{margin-top:10px;margin-bottom:10px;padding:30px;background:#fff}
+#content h2.cnt_tit{font-family:"Nanum Gothic";color:#000;font-size:28px;font-weight:bold}
+#content .location{top:50px;right:30px;padding-top:17px}
+#content .location li{float:left;padding-left:5px}
+#content .location li.home{padding-left:23px;background:url("../images/home.jpg") no-repeat 0 0}
+
+.parent_list .search-wrap02{margin-top:33px;margin-bottom:20px}
+.parent_list tr th, .parent_list tr td{border-left:1px solid #ccc}
+.parent_list .bor0{border-left:0;padding-right:10px}
+.parent_list .padl{text-align:left;padding-left:20px}
+
+.parent_list label{margin-left:20px;font-weight:bold;vertical-align:middle}
+.parent_list select, .parent_list input{margin-left:10px}
+.parent_list .txt{width:160px}
+
+a.btn-type-04{display:inline-block;height:20px;line-height:20px;padding:1px 18px 0;background:url("../images/bg_btn_type04.gif") repeat-x 0 0;border:1px solid #4c727e;border-color:#4c727e #456772 #40616b #4c727e;font-size:12px;font-weight:bold; color:#fff !important;text-decoration:none!important;vertical-align:middle;}
+a.btn-type-03{display:inline-block;height:14px;line-height:14px;padding:2px 8px 1px;background:url("../images/bg_btn_type03.gif") repeat-x 0 0; border:1px solid #dfdfdf;border-color:#dfdfdf #c9c9c9 #bdbdbd #dfdfdf; font-size:11px;font-weight:bold;color:#505050 !important;text-decoration:none !important;vertical-align:middle;}
+a.btn-type-06{display:inline-block;height:15px;line-height:15px;padding:3px 8px 0px 9px;background:url("../images/bg_btn_type06.gif") repeat-x 0 0;border-right:1px solid #6a6a6a;border-bottom:1px solid #5c5c5c;font-size:11px;font-weight:bold;color:#fff !important;text-decoration:none !important;vertical-align:middle;
+}
+
+/* 학부모관리(등록) */
+#content.parent_enroll .blank{padding-top:32px}
+.parent_enroll input, .application input{width:200px}
+.parent_enroll textarea{width:780px;height:100px;overflow-y:scroll;}

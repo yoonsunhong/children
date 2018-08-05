@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <title> 학부모관리(등록) </title>
+  <link rel="stylesheet" href="css/children.css">
+  <link rel="stylesheet" href="css/bbs.css">
+  <link rel="stylesheet" href="css/global.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+ </head>
+
+ <body class="sub">
+ 	<div id="skip"><a href="#content">콘텐츠 바로가기</a></div>
+  <header id="header">
+	<div class="snb">
+		<div class="area clear">
+			<ul class="f_r">
+				<li><a href="#">HOME</a>&nbsp;|</li>
+				<li><a href="#">로그인</a>&nbsp;|</li>
+				<li><a href="#">회원가입</a>&nbsp;|</li>
+				<li><a href="#">아이디/비밀번호 찾기</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="gnb area clear">
+		<h1 class="logo f_l"><a href="index.html"><img src="images/logo.jpg" width="202" height="42" alt="어린이 통합버스 위치 안내 시스템"></a></h1>
+		<nav id="gnbNavi" class="f_r">
+			<ul>
+				<li><a href="introduce.html">사업소개</a></li>
+				<li><a href="bus_list.html">통학버스관리</a></li>
+				<li class="on"><a href="parent_list.html">학부모관리</a></li>
+				<li><a href="#">운행궤적</a></li>
+				<li><a href="#">종합진단표</a></li>
+			</ul>
+		</nav>
+	</div>	
+  </header>
+	<section id="content" class="parent_enroll">
+		<div class="blank area">
+			<h3 class="contents-title-type02 titleInsertTarget cnt_tit">학부모관리</h3>
+			<div class="title-wrap-type02 clear">
+			  <h4>학부모 관리 등록</h4>
+			  <p>'<span>*</span>' 는 필수 입력사항 입니다.</p>
+			</div>
+			<form method="post">
+				<fieldset>
+				<legend>학원 정보를 등록할 수 있는 양식 입니다.</legend>
+				<input type="hidden" name="authorId" id="authorId" value="AUTH_000000000000057">
+				<input type="hidden" name="searchCol" id="searchCol" value="">
+				<input type="hidden" name="searchVal" id="searchVal" value="">
+				<input type="hidden" name="recordCountPerPage" id="recordCountPerPage" value="20">
+				<input type="hidden" name="currentPageNo" id="currentPageNo" value="1">
+				
+				<table class="table-type03">
+				  <caption>학원 정보 등록</caption>
+				  <colgroup>
+				  <col style="width:20%">
+				  <col style="width:80%">
+				  </colgroup>
+				  <tbody>
+					<tr>
+					  <th scope="row"><label for="schoolName">유치원/초등학교명<span class="f-point02 fwb">*</span><span class="blind">필수입력사항</span></label></th>
+					  <td><input type="text" id="schoolName" class="ip-wid02 txt required" maxlength="40"></td>
+					</tr>
+					<tr>
+					  <th scope="row"><label for="parentName">학부모 이름<span class="f-point02 fwb">*</span><span class="blind">필수입력사항</span></label></th>
+					  <td><input type="text" id="parentName" class="ip-wid02 txt required" maxlength="40"></td>
+					</tr>
+					<tr>
+					  <th scope="row"><label for="studentName">학생 이름</label></th>
+					  <td><input type="text" id="studentName" class="ip-wid02 txt required" maxlength="40"></td>
+					</tr>
+					<tr>
+					  <th scope="row"><label for="parentTel">학부모 전화번호</label><span class="f-point02">*</span><span class="blind">필수입력사항</span></th>
+					  <td><input type="text" id="parentTel" class="ip-wid02 txt required" maxlength="40"></td>
+					</tr>
+					<tr>
+					  <th scope="row"><label for="controlAppId">유치원 차량 관제 APP 아이디<span class="f-point02 fwb">*</span><span class="blind">필수입력사항</span></label></th>
+					  <td><input type="text" id="controlAppId" class="ip-wid02 txt required" maxlength="40"></td>
+					</tr>
+					<tr>
+					  <th scope="row"><label for="controlAppPwd">유치원 차량 관제 APP 비밀번호</label></th>
+					  <td><input type="text" id="controlAppPwd" class="ip-wid02 txt required" maxlength="40"></td>
+					</tr>
+					<tr>
+					  <th scope="row"><label for="note">비고</label></th>
+					  <td><textarea id="note" class="t-area-type01 required" maxlength="150"></textarea></td>
+					</tr>
+				  </tbody>
+				</table>
+
+				<div class="control-btn-box2">
+				  <a href="#" class="btn-type-01">등록</a>
+				  <a href="#" class="btn-type-02">취소</a>
+				</div>
+
+				</fieldset>
+			</form>
+		</div>
+	</section>
+    <footer id="footer">
+	<div class="area">
+		<p>개인정보 처리방침</p>
+		<address>(우) 740-220 경상북도 김천시 혁신6로 17(율곡동, 교통안전공단)<br>Copyright&copy; 2013 by TLS. All rights Reserved.</address>
+	</div>
+    </footer>
+  </body>
+</html>
