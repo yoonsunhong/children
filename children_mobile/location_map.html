@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi" />
   <title> 어린이 통학버스 위치안내 시스템 | 통학 차량 위치 확인 </title>
   <link rel="stylesheet" href="css/style.css" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.exp&region=KR"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js?v=3.exp&region=KR"></script>
   <script>
     //구글맵 지도 사용하기 함수선언
 	function initialize(X_point, Y_point, target) {
@@ -63,7 +63,7 @@
 		<h2 class="loc_tit">통학 차량 위치 확인</h2>
 		<div class="cnt_select">
 			<div class="area02">
-				<label for="carList" class="blind"></label><select name="carList" id="" class="f_l"><option value="전체">전체</option></select>
+				<label for="carList" class="blind">통학 차량 리스트</label><select id="carList" class="f_l"><option value="전체">전체</option></select>
 				<button class="confirm_btn f_r">확인</button>
 			</div>
 		</div>
